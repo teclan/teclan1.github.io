@@ -23,7 +23,7 @@ Git安装1sudo apt-get install git
 
 Git安装1sudo apt-get install git
 生成key设置你的邮箱信息123$ ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;# Creates a new ssh key, using the provided email as a labelGenera">
-<meta property="og:updated_time" content="2016-07-13T09:41:45.895Z">
+<meta property="og:updated_time" content="2016-07-13T09:53:03.909Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu java 开发环境搭建">
 <meta name="twitter:description" content="ubuntu16.04 使用 apt 代替 apt-get
@@ -98,7 +98,7 @@ Git安装1sudo apt-get install git
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git"><span class="toc-number">1.</span> <span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成key"><span class="toc-number">1.2.</span> <span class="toc-text">生成key</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ssh"><span class="toc-number">2.</span> <span class="toc-text">ssh</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-1"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#确认sshserver是否启动了"><span class="toc-number">2.2.</span> <span class="toc-text">确认sshserver是否启动了</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置使登录时间更端"><span class="toc-number">2.3.</span> <span class="toc-text">配置使登录时间更端</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#maven"><span class="toc-number">3.</span> <span class="toc-text">maven</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载"><span class="toc-number">3.1.</span> <span class="toc-text">下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">3.2.</span> <span class="toc-text">配置</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git"><span class="toc-number">1.</span> <span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成key"><span class="toc-number">1.2.</span> <span class="toc-text">生成key</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ssh"><span class="toc-number">2.</span> <span class="toc-text">ssh</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-1"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#确认sshserver是否启动了"><span class="toc-number">2.2.</span> <span class="toc-text">确认sshserver是否启动了</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置使登录时间更端"><span class="toc-number">2.3.</span> <span class="toc-text">配置使登录时间更端</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#maven"><span class="toc-number">3.</span> <span class="toc-text">maven</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载"><span class="toc-number">3.1.</span> <span class="toc-text">下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">3.2.</span> <span class="toc-text">配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jdk"><span class="toc-number">4.</span> <span class="toc-text">jdk</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载-1"><span class="toc-number">4.1.</span> <span class="toc-text">下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-1"><span class="toc-number">4.2.</span> <span class="toc-text">配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#eclipse"><span class="toc-number">5.</span> <span class="toc-text">eclipse</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载-2"><span class="toc-number">5.1.</span> <span class="toc-text">下载</span></a></li></ol></li></ol>
 		
 		</div>
 		
@@ -118,6 +118,10 @@ Git安装1sudo apt-get install git
 <h1 id="maven"><a href="#maven" class="headerlink" title="maven"></a>maven</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><a href="http://maven.apache.org/download.cgi" target="_blank" rel="external">点此下载</a></p>
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>在置文件中添加（形如）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">M2=<span class="string">"/path/to/maven"</span>   </div><div class="line">PATH=<span class="string">"<span class="variable">$M2</span>/bin/:...."</span></div></pre></td></tr></table></figure></p>
 <p>使配置生效：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">source</span> .zshrc <span class="comment">#具体配置文件根据自己情况指定</span></div></pre></td></tr></table></figure></p>
+<h1 id="jdk"><a href="#jdk" class="headerlink" title="jdk"></a>jdk</h1><h2 id="下载-1"><a href="#下载-1" class="headerlink" title="下载"></a>下载</h2><p><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="external">点此下载</a></p>
+<h2 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h2><p>解压后拷至某个目录后，在配置文件添加（形如）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">JAVA_HOME=<span class="string">"/path/to/jdk"</span></div><div class="line">PATH=<span class="string">"<span class="variable">$JAVA_HOME</span>/bin:..."</span></div></pre></td></tr></table></figure></p>
+<p>修改默认jdk<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo update-alternatives --install /usr/bin/java java /path/to/jdk/bin/java 300</div><div class="line">sudo update-alternatives --install /usr/bin/javac javac /path/to/jdk/bin/javac 300</div><div class="line">sudo update-alternatives --config java</div></pre></td></tr></table></figure></p>
+<h1 id="eclipse"><a href="#eclipse" class="headerlink" title="eclipse"></a>eclipse</h1><h2 id="下载-2"><a href="#下载-2" class="headerlink" title="下载"></a>下载</h2><p><a href="http://www.eclipse.org/" target="_blank" rel="external">点此下载</a></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -126,7 +130,7 @@ Git安装1sudo apt-get install git
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/ubuntu/">ubuntu</a><a href="/tags/java/">java</a><a href="/tags/ssh/">ssh</a><a href="/tags/git/">git</a>
+  <span></span> <a href="/tags/ubuntu/">ubuntu</a><a href="/tags/ssh/">ssh</a><a href="/tags/java/">java</a><a href="/tags/git/">git</a>
   </div>
 
 </div>
@@ -170,6 +174,14 @@ Git安装1sudo apt-get install git
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2016/07/15/常见数据库操作SQL/" title="常见数据库操作SQL">
+  <strong>上一篇：</strong><br/>
+  <span>
+  常见数据库操作SQL</span>
+</a>
+</div>
+
 
 <div class="next">
 <a href="/2016/07/09/linux-常见命令/"  title="linux 常见命令">
@@ -189,7 +201,7 @@ Git安装1sudo apt-get install git
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git"><span class="toc-number">1.</span> <span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成key"><span class="toc-number">1.2.</span> <span class="toc-text">生成key</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ssh"><span class="toc-number">2.</span> <span class="toc-text">ssh</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-1"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#确认sshserver是否启动了"><span class="toc-number">2.2.</span> <span class="toc-text">确认sshserver是否启动了</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置使登录时间更端"><span class="toc-number">2.3.</span> <span class="toc-text">配置使登录时间更端</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#maven"><span class="toc-number">3.</span> <span class="toc-text">maven</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载"><span class="toc-number">3.1.</span> <span class="toc-text">下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">3.2.</span> <span class="toc-text">配置</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git"><span class="toc-number">1.</span> <span class="toc-text">Git</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成key"><span class="toc-number">1.2.</span> <span class="toc-text">生成key</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ssh"><span class="toc-number">2.</span> <span class="toc-text">ssh</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-1"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#确认sshserver是否启动了"><span class="toc-number">2.2.</span> <span class="toc-text">确认sshserver是否启动了</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置使登录时间更端"><span class="toc-number">2.3.</span> <span class="toc-text">配置使登录时间更端</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#maven"><span class="toc-number">3.</span> <span class="toc-text">maven</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载"><span class="toc-number">3.1.</span> <span class="toc-text">下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">3.2.</span> <span class="toc-text">配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jdk"><span class="toc-number">4.</span> <span class="toc-text">jdk</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载-1"><span class="toc-number">4.1.</span> <span class="toc-text">下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-1"><span class="toc-number">4.2.</span> <span class="toc-text">配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#eclipse"><span class="toc-number">5.</span> <span class="toc-text">eclipse</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载-2"><span class="toc-number">5.1.</span> <span class="toc-text">下载</span></a></li></ol></li></ol>
  
   </div>
 
@@ -215,11 +227,11 @@ Git安装1sudo apt-get install git
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/ubuntu/" title="ubuntu">ubuntu<sup>2</sup></a></li>
+				<li><a href="/tags/ssh/" title="ssh">ssh<sup>2</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/ssh/" title="ssh">ssh<sup>2</sup></a></li>
+				<li><a href="/tags/ubuntu/" title="ubuntu">ubuntu<sup>2</sup></a></li>
 			
 		
 			
@@ -227,15 +239,7 @@ Git安装1sudo apt-get install git
 			
 		
 			
-				<li><a href="/tags/git/" title="git">git<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+				<li><a href="/tags/eclipse/" title="eclipse">eclipse<sup>1</sup></a></li>
 			
 		
 			
@@ -243,11 +247,7 @@ Git安装1sudo apt-get install git
 			
 		
 			
-				<li><a href="/tags/linux/" title="linux">linux<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/eclipse/" title="eclipse">eclipse<sup>1</sup></a></li>
+				<li><a href="/tags/maven/" title="maven">maven<sup>1</sup></a></li>
 			
 		
 			
@@ -259,7 +259,43 @@ Git安装1sudo apt-get install git
 			
 		
 			
-				<li><a href="/tags/maven/" title="maven">maven<sup>1</sup></a></li>
+				<li><a href="/tags/linux/" title="linux">linux<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/java/" title="java">java<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/git/" title="git">git<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/kingbase/" title="kingbase">kingbase<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/DB2/" title="DB2">DB2<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Oracle，达梦，sqlserver2k/" title="Oracle，达梦，sqlserver2k">Oracle，达梦，sqlserver2k<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/sqlserver2k/" title="sqlserver2k+">sqlserver2k+<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/mysql/" title="mysql">mysql<sup>1</sup></a></li>
+			
+		
+			
+		
 			
 		
 		</ul>
