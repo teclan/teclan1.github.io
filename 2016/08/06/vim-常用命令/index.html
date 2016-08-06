@@ -4,34 +4,32 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>maven多模块 | Teclan</title>
+    <title>vim 常用命令 | Teclan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Teclan">
     
 
     
-    <meta name="description" content="Maven 多模块项目示例
-新建 Maven 父项目 根据需要删除目录下面的src/,只保留pox.xml,将 1&amp;lt;packaging&amp;gt;jar&amp;lt;/packaging&amp;gt;
- 改成 1&amp;lt;packaging&amp;gt;pom&amp;lt;/packaging&amp;gt;
- 设置父项目版本和编码，子项目版本一般跟父项目一致，故使用父项目的配置即可 1234&amp;lt;properties&amp;gt;">
+    <meta name="description" content="光标移动 h或左箭头：左移一个字符 j或下箭头：下移一个字符 k或上箭头：上移一个字符 l或右箭头：右移一个字符
+ 可以使用组合键，如需要向下移动20行，输入：20j
+ [Ctrl]+[b] 或 PageUp  :上翻一页 [Ctrl]+[f] 或 PageDown:上翻一页 [Ctrl]+[u]:上翻半页 [Ctrl]+[d]:下翻半页
+ 0 或 [Home] : 移动至行首 $ 或 [End]">
 <meta property="og:type" content="article">
-<meta property="og:title" content="maven多模块">
-<meta property="og:url" content="https://teclan.github.io/2016/07/07/maven多模块/index.html">
+<meta property="og:title" content="vim 常用命令">
+<meta property="og:url" content="https://teclan.github.io/2016/08/06/vim-常用命令/index.html">
 <meta property="og:site_name" content="Teclan">
-<meta property="og:description" content="Maven 多模块项目示例
-新建 Maven 父项目 根据需要删除目录下面的src/,只保留pox.xml,将 1&amp;lt;packaging&amp;gt;jar&amp;lt;/packaging&amp;gt;
- 改成 1&amp;lt;packaging&amp;gt;pom&amp;lt;/packaging&amp;gt;
- 设置父项目版本和编码，子项目版本一般跟父项目一致，故使用父项目的配置即可 1234&amp;lt;properties&amp;gt;">
-<meta property="og:image" content="https://img.alicdn.com/imgextra/i4/1095268166/TB2q4wWspXXXXbIXXXXXXXXXXXX_!!1095268166.png">
-<meta property="og:updated_time" content="2016-07-08T02:13:59.773Z">
+<meta property="og:description" content="光标移动 h或左箭头：左移一个字符 j或下箭头：下移一个字符 k或上箭头：上移一个字符 l或右箭头：右移一个字符
+ 可以使用组合键，如需要向下移动20行，输入：20j
+ [Ctrl]+[b] 或 PageUp  :上翻一页 [Ctrl]+[f] 或 PageDown:上翻一页 [Ctrl]+[u]:上翻半页 [Ctrl]+[d]:下翻半页
+ 0 或 [Home] : 移动至行首 $ 或 [End]">
+<meta property="og:updated_time" content="2016-08-06T03:48:55.125Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="maven多模块">
-<meta name="twitter:description" content="Maven 多模块项目示例
-新建 Maven 父项目 根据需要删除目录下面的src/,只保留pox.xml,将 1&amp;lt;packaging&amp;gt;jar&amp;lt;/packaging&amp;gt;
- 改成 1&amp;lt;packaging&amp;gt;pom&amp;lt;/packaging&amp;gt;
- 设置父项目版本和编码，子项目版本一般跟父项目一致，故使用父项目的配置即可 1234&amp;lt;properties&amp;gt;">
-<meta name="twitter:image" content="https://img.alicdn.com/imgextra/i4/1095268166/TB2q4wWspXXXXbIXXXXXXXXXXXX_!!1095268166.png">
+<meta name="twitter:title" content="vim 常用命令">
+<meta name="twitter:description" content="光标移动 h或左箭头：左移一个字符 j或下箭头：下移一个字符 k或上箭头：上移一个字符 l或右箭头：右移一个字符
+ 可以使用组合键，如需要向下移动20行，输入：20j
+ [Ctrl]+[b] 或 PageUp  :上翻一页 [Ctrl]+[f] 或 PageDown:上翻一页 [Ctrl]+[u]:上翻半页 [Ctrl]+[d]:下翻半页
+ 0 或 [Home] : 移动至行首 $ 或 [End]">
 <meta name="twitter:creator" content="@tbj621">
 
     
@@ -84,14 +82,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/07/07/maven多模块/" title="maven多模块" itemprop="url">maven多模块</a>
+      <a href="/2016/08/06/vim-常用命令/" title="vim 常用命令" itemprop="url">vim 常用命令</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Teclan" target="_blank" itemprop="author">Teclan</a>
 		
   <p class="article-time">
-    <time datetime="2016-07-07T10:03:12.000Z" itemprop="datePublished"> 发表于 2016-07-07</time>
+    <time datetime="2016-08-06T03:06:59.000Z" itemprop="datePublished"> 发表于 2016-08-06</time>
     
   </p>
 </header>
@@ -100,21 +98,25 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Maven-多模块"><span class="toc-number">1.</span> <span class="toc-text">Maven 多模块</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#新建-Maven-父项目"><span class="toc-number">1.1.</span> <span class="toc-text">新建 Maven 父项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#新建子项目-Module"><span class="toc-number">1.2.</span> <span class="toc-text">新建子项目(Module)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#依赖"><span class="toc-number">2.</span> <span class="toc-text">依赖</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#测试"><span class="toc-number">3.</span> <span class="toc-text">测试</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#打包"><span class="toc-number">4.</span> <span class="toc-text">打包</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#光标移动"><span class="toc-number">1.</span> <span class="toc-text">光标移动</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查找替换"><span class="toc-number">2.</span> <span class="toc-text">查找替换</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除，复制，粘贴"><span class="toc-number">3.</span> <span class="toc-text">删除，复制，粘贴</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#插入"><span class="toc-number">4.</span> <span class="toc-text">插入</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#保存，离开"><span class="toc-number">5.</span> <span class="toc-text">保存，离开</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#行号"><span class="toc-number">6.</span> <span class="toc-text">行号</span></a></li></ol>
 		
 		</div>
 		
-		<h1 id="Maven-多模块"><a href="#Maven-多模块" class="headerlink" title="Maven 多模块"></a>Maven 多模块</h1><p><a href="https://github.com/teclan/teclan-parent" target="_blank" rel="external">项目示例</a></p>
-<h2 id="新建-Maven-父项目"><a href="#新建-Maven-父项目" class="headerlink" title="新建 Maven 父项目"></a>新建 Maven 父项目</h2><p> 根据需要删除目录下面的src/,只保留pox.xml,将<br> <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;packaging&gt;jar&lt;/packaging&gt;</div></pre></td></tr></table></figure></p>
-<p> 改成<br> <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;packaging&gt;pom&lt;/packaging&gt;</div></pre></td></tr></table></figure></p>
-<p> 设置父项目版本和编码，子项目版本一般跟父项目一致，故使用父项目的配置即可<br> <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;properties&gt;</div><div class="line">	   &lt;teclan.version&gt;0.1.0-SNAPSHOT&lt;/teclan.version&gt;</div><div class="line">    &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;</div><div class="line">&lt;/properties&gt;</div></pre></td></tr></table></figure></p>
-<h2 id="新建子项目-Module"><a href="#新建子项目-Module" class="headerlink" title="新建子项目(Module)"></a>新建子项目(Module)</h2><p> 配置同普通maven项目，例如创建示例Module项目 model-Demo1 和 model-Demo2,<br> 则在父项目的pom.xml中可看到增加如下内容<br> <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;modules&gt;</div><div class="line">   &lt;module&gt;module-demo1&lt;/module&gt;</div><div class="line"> 	&lt;module&gt;module-demo2&lt;/module&gt;</div><div class="line"> &lt;/modules&gt;</div></pre></td></tr></table></figure></p>
-<h1 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h1><p>子项目用到的共同依赖可以放到父项目中，如果子项目与父项目的依赖组件相同，但是版本号不同，<br>那么子项目会调用子项目的依赖组件</p>
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p>在父项目下执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ mvn <span class="built_in">test</span></div></pre></td></tr></table></figure></p>
-<p>会执行所以子项目的单元测试，例如示例项目中：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ path/to/project  mvn <span class="built_in">test</span></div></pre></td></tr></table></figure></p>
-<p>结果如下：<br><img src="https://img.alicdn.com/imgextra/i4/1095268166/TB2q4wWspXXXXbIXXXXXXXXXXXX_!!1095268166.png" alt=""></p>
-<h1 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ path/to/project mvn package -Dmaven.test.skip=True</div></pre></td></tr></table></figure>
-<p>每个子项目单独打出jar,其他配置待后续更新…</p>
+		<h1 id="光标移动"><a href="#光标移动" class="headerlink" title="光标移动"></a>光标移动</h1><p> h或左箭头：左移一个字符<br> j或下箭头：下移一个字符<br> k或上箭头：上移一个字符<br> l或右箭头：右移一个字符</p>
+<p> 可以使用组合键，如需要向下移动20行，输入：20j</p>
+<p> [Ctrl]+[b] 或 PageUp  :上翻一页<br> [Ctrl]+[f] 或 PageDown:上翻一页<br> [Ctrl]+[u]:上翻半页<br> [Ctrl]+[d]:下翻半页</p>
+<p> 0 或 [Home] : 移动至行首<br> $ 或 [End]  ：移动至行末</p>
+<p> G ： 移动至文件最后一行<br> gg： 移动至文件第一行<br> nG： 移动至文件第n行<br> n[Enter]：从所在行开始向下移动 n 行</p>
+<h1 id="查找替换"><a href="#查找替换" class="headerlink" title="查找替换"></a>查找替换</h1><p> /word :向下查找 word 字符，按 n 向下寻找匹配字符<br> ？word：向上查找 word 字符，按 n 向上寻找匹配字符<br> n ： 重复查找操作<br> N ： 与 n 反向</p>
+<p> :n1,n2s/word1/word2/g : n1和n2是数字，表示在第n1行到第n2行之间查找word1,并且将其替换成word2<br> :1,$s/word1/word2/g  :替换所有的word1为word2<br> :1,$s/word1/word2/gc  :替换所有的word1为word2,但是每一个匹配项替换前需要用户确认</p>
+<h1 id="删除，复制，粘贴"><a href="#删除，复制，粘贴" class="headerlink" title="删除，复制，粘贴"></a>删除，复制，粘贴</h1><p> x 或 [Delete] ：向后删除一个字符<br> X 或 [Backspace] ： 向前删除一个字符<br> nx ： 连续向后删除 n 个字符<br> dd ： 删除当前行<br> ndd ： 删除当前行开始向下 n 行</p>
+<p> dG : 删除当前行到最后一行的数据<br> d1G :删除当前行到第一行的数据</p>
+<p> yy : 复制当前行<br> nyy ： 复制当前行开始向下 n 行<br> yG : 复制当前行到最后一行的数据<br> y1G : 复制当前行到第一行的数据</p>
+<p> p(小写)：在当前行下一行粘贴<br> P（大写）：在当前行上一行粘贴</p>
+<p> u ： 撤销<br> [Ctrl]+r : 重做，反撤销</p>
+<h1 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h1><p> i： 在光标所在位置开始插入<br> I ： 在当前行行首插入<br> a ： 在光标所在字符下一个位置开始插入<br> A ： 在当前行行末插入<br> o ： 在当前行下一行开始插入<br> O ： 在当前行上一行开始插入<br> r ： 替换光标所在字符一次<br> R ： 持续替换光标所在字符，按[Esc]停止</p>
+<h1 id="保存，离开"><a href="#保存，离开" class="headerlink" title="保存，离开"></a>保存，离开</h1><p> ：w ： 写入硬盘<br> ：w! ： 强制写入硬盘<br> ：q ： 离开vim<br> ：q!： 修改过文件，但是不想保存，强制离开<br> ：wq ：保存后离开<br> ：wq! ：强制保存后离开<br> ：n1,n2 w [filename] :将第n1行到n2行的数据保存到文件filename</p>
+<h1 id="行号"><a href="#行号" class="headerlink" title="行号"></a>行号</h1><p>：set nu ：显示行号<br>：set nonu ：取消行号显示</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -123,7 +125,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/maven/">maven</a>
+  <span></span> <a href="/tags/vim/">vim</a>
   </div>
 
 </div>
@@ -167,19 +169,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/07/09/linux-常见命令/" title="linux 常见命令">
-  <strong>上一篇：</strong><br/>
-  <span>
-  linux 常见命令</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/07/06/ssh配置/"  title="ssh配置">
+<a href="/2016/07/15/常见数据库操作SQL/"  title="常见数据库操作SQL">
  <strong>下一篇：</strong><br/> 
- <span>ssh配置
+ <span>常见数据库操作SQL
 </span>
 </a>
 </div>
@@ -194,7 +188,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Maven-多模块"><span class="toc-number">1.</span> <span class="toc-text">Maven 多模块</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#新建-Maven-父项目"><span class="toc-number">1.1.</span> <span class="toc-text">新建 Maven 父项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#新建子项目-Module"><span class="toc-number">1.2.</span> <span class="toc-text">新建子项目(Module)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#依赖"><span class="toc-number">2.</span> <span class="toc-text">依赖</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#测试"><span class="toc-number">3.</span> <span class="toc-text">测试</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#打包"><span class="toc-number">4.</span> <span class="toc-text">打包</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#光标移动"><span class="toc-number">1.</span> <span class="toc-text">光标移动</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查找替换"><span class="toc-number">2.</span> <span class="toc-text">查找替换</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除，复制，粘贴"><span class="toc-number">3.</span> <span class="toc-text">删除，复制，粘贴</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#插入"><span class="toc-number">4.</span> <span class="toc-text">插入</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#保存，离开"><span class="toc-number">5.</span> <span class="toc-text">保存，离开</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#行号"><span class="toc-number">6.</span> <span class="toc-text">行号</span></a></li></ol>
  
   </div>
 
