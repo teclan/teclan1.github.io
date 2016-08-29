@@ -4,35 +4,26 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>ssh配置 | Teclan</title>
+    <title>mysql 中文乱码问题 | Teclan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Teclan">
     
 
     
-    <meta name="description" content="仅介绍Linux下的方式
-
-Chrome 插件下载插件并安装（提取码：358b）
-安装shadowsocks1$ sudo -H pip install shadowsocks
-加载配置配置文件格式如下（例如取名为：config.json）：1234567891011&amp;#123;	&quot;server&quot;:&quot;xx.xx.xx.xx&quot;,	&quot;server_port&quot;:xx	&quot;local_address&quot;:&quot;">
+    <meta name="description" content="错误详情1ERROR 1366 (HY000): Incorrect string value:xxx
+解决方案重建数据库12create database db_name;//此时使用的是默认编码，插入中文会乱码alter database db_name default character set gb2312 default collate gb2312_chinese_ci;//修改数据库">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ssh配置">
-<meta property="og:url" content="https://teclan.github.io/2016/07/06/ssh配置/index.html">
+<meta property="og:title" content="mysql 中文乱码问题">
+<meta property="og:url" content="https://teclan.github.io/2016/08/29/mysql-中文乱码问题/index.html">
 <meta property="og:site_name" content="Teclan">
-<meta property="og:description" content="仅介绍Linux下的方式
-
-Chrome 插件下载插件并安装（提取码：358b）
-安装shadowsocks1$ sudo -H pip install shadowsocks
-加载配置配置文件格式如下（例如取名为：config.json）：1234567891011&amp;#123;	&quot;server&quot;:&quot;xx.xx.xx.xx&quot;,	&quot;server_port&quot;:xx	&quot;local_address&quot;:&quot;">
-<meta property="og:updated_time" content="2016-07-08T02:13:59.773Z">
+<meta property="og:description" content="错误详情1ERROR 1366 (HY000): Incorrect string value:xxx
+解决方案重建数据库12create database db_name;//此时使用的是默认编码，插入中文会乱码alter database db_name default character set gb2312 default collate gb2312_chinese_ci;//修改数据库">
+<meta property="og:updated_time" content="2016-08-29T08:45:46.586Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ssh配置">
-<meta name="twitter:description" content="仅介绍Linux下的方式
-
-Chrome 插件下载插件并安装（提取码：358b）
-安装shadowsocks1$ sudo -H pip install shadowsocks
-加载配置配置文件格式如下（例如取名为：config.json）：1234567891011&amp;#123;	&quot;server&quot;:&quot;xx.xx.xx.xx&quot;,	&quot;server_port&quot;:xx	&quot;local_address&quot;:&quot;">
+<meta name="twitter:title" content="mysql 中文乱码问题">
+<meta name="twitter:description" content="错误详情1ERROR 1366 (HY000): Incorrect string value:xxx
+解决方案重建数据库12create database db_name;//此时使用的是默认编码，插入中文会乱码alter database db_name default character set gb2312 default collate gb2312_chinese_ci;//修改数据库">
 <meta name="twitter:creator" content="@tbj621">
 
     
@@ -85,14 +76,14 @@ Chrome 插件下载插件并安装（提取码：358b）
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/07/06/ssh配置/" title="ssh配置" itemprop="url">ssh配置</a>
+      <a href="/2016/08/29/mysql-中文乱码问题/" title="mysql 中文乱码问题" itemprop="url">mysql 中文乱码问题</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Teclan" target="_blank" itemprop="author">Teclan</a>
 		
   <p class="article-time">
-    <time datetime="2016-07-06T09:03:40.000Z" itemprop="datePublished"> 发表于 2016-07-06</time>
+    <time datetime="2016-08-29T08:36:46.000Z" itemprop="datePublished"> 发表于 2016-08-29</time>
     
   </p>
 </header>
@@ -101,18 +92,14 @@ Chrome 插件下载插件并安装（提取码：358b）
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Chrome-插件"><span class="toc-number">1.</span> <span class="toc-text">Chrome 插件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装shadowsocks"><span class="toc-number">2.</span> <span class="toc-text">安装shadowsocks</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#加载配置"><span class="toc-number">3.</span> <span class="toc-text">加载配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#插件配置"><span class="toc-number">4.</span> <span class="toc-text">插件配置</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#错误详情"><span class="toc-number">1.</span> <span class="toc-text">错误详情</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解决方案"><span class="toc-number">2.</span> <span class="toc-text">解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#重建数据库"><span class="toc-number">2.1.</span> <span class="toc-text">重建数据库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#建表时指定编码和检验规则，例如"><span class="toc-number">2.2.</span> <span class="toc-text">建表时指定编码和检验规则，例如</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#其他资料"><span class="toc-number">2.3.</span> <span class="toc-text">其他资料</span></a></li></ol></li></ol>
 		
 		</div>
 		
-		<blockquote>
-<p>仅介绍Linux下的方式</p>
-</blockquote>
-<h1 id="Chrome-插件"><a href="#Chrome-插件" class="headerlink" title="Chrome 插件"></a>Chrome 插件</h1><p><a href="https://yunpan.cn/cBFZxVTrIpBEe" target="_blank" rel="external">下载插件</a>并安装<br>（提取码：358b）</p>
-<h1 id="安装shadowsocks"><a href="#安装shadowsocks" class="headerlink" title="安装shadowsocks"></a>安装shadowsocks</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo -H pip install shadowsocks</div></pre></td></tr></table></figure>
-<h1 id="加载配置"><a href="#加载配置" class="headerlink" title="加载配置"></a>加载配置</h1><p>配置文件格式如下（例如取名为：config.json）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="string">"server"</span>:<span class="string">"xx.xx.xx.xx"</span>,</div><div class="line">	<span class="string">"server_port"</span>:xx</div><div class="line">	<span class="string">"local_address"</span>:<span class="string">"0.0.0.0"</span>,</div><div class="line">	<span class="string">"local_port"</span>:1080,</div><div class="line">	<span class="string">"password"</span>:<span class="string">"password"</span>,</div><div class="line">	<span class="string">"timeout"</span>:300,</div><div class="line">	<span class="string">"method"</span>:<span class="string">"aes-256-cfb"</span>,</div><div class="line">	<span class="string">"fast_open"</span>:<span class="literal">false</span>,</div><div class="line">	<span class="string">"workers"</span>:1</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>其中 method 是加密字段，根据购买的服务填写。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sslocal -c config.json</div></pre></td></tr></table></figure></p>
-<h1 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a>插件配置</h1><p>打开安装的插件，设置如下，应用即可<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Scheme	   Protocol	   Server    	Port</div><div class="line">(default)	 SOCKS5      127.0.0.1  1080</div></pre></td></tr></table></figure></p>
+		<h3 id="错误详情"><a href="#错误详情" class="headerlink" title="错误详情"></a>错误详情</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ERROR 1366 (HY000): Incorrect string value:xxx</div></pre></td></tr></table></figure>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><h4 id="重建数据库"><a href="#重建数据库" class="headerlink" title="重建数据库"></a>重建数据库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">create database db_name;//此时使用的是默认编码，插入中文会乱码</div><div class="line">alter database db_name default character set gb2312 default collate gb2312_chinese_ci;//修改数据库的设置字符集和字符校对规则,之后中文不再乱码</div></pre></td></tr></table></figure>
+<h4 id="建表时指定编码和检验规则，例如"><a href="#建表时指定编码和检验规则，例如" class="headerlink" title="建表时指定编码和检验规则，例如"></a>建表时指定编码和检验规则，例如</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">create table table_name(</div><div class="line">   id int primary key,</div><div class="line">   name varchar(100) character set gb2312 collate gb2312_chinese_ci</div><div class="line">)default character set gb2312 default collate gb2312_chinese_ci;</div></pre></td></tr></table></figure>
+<h4 id="其他资料"><a href="#其他资料" class="headerlink" title="其他资料"></a>其他资料</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"># 查看MySQL能够支持的多种字符集：</div><div class="line">show character set;</div><div class="line"></div><div class="line"># 查看字符集的校对规则：</div><div class="line">show collation;</div><div class="line">show collation like &apos;gb%&apos;;</div><div class="line"></div><div class="line"># 每个字符集有一个默认校对规则。</div><div class="line"># 创建数据库时设置字符集和字符校对规则：</div><div class="line">create database db_name default character set utf8 default collate utf8_general_ci;</div><div class="line"></div><div class="line"># 修改数据库的设置字符集和字符校对规则：</div><div class="line">alter database db_name default character set gb2312 default collate gb2312_chinese_ci;</div><div class="line"></div><div class="line"># 修改表的字符集与表的字符校对规则：</div><div class="line">alter table table_name default character set utf8 default collate utf8_general_ci;</div><div class="line"></div><div class="line"># 修改表的列的字符集与表的列的字符校对规则：</div><div class="line">alter table table_name modify name varchar(100) character set utf8 collate utf8_general_ci;</div><div class="line"></div><div class="line"># 查看表的字符集与字符校对规则：</div><div class="line">show create table table_name;</div><div class="line"></div><div class="line"># 查看字符集系统变量：</div><div class="line">show variables like &apos;character_set_%&apos;;</div><div class="line"># 查看校对规则系统变量：</div><div class="line">show variables like &apos;collation_%&apos;;</div><div class="line"></div><div class="line"># 字符集系统变量介绍：</div><div class="line">character_set_server：默认的内部操作字符集</div><div class="line">character_set_client：客户端来源数据使用的字符集</div><div class="line">character_set_connection：连接层字符集</div><div class="line">character_set_results：查询结果字符集</div><div class="line">character_set_database：当前选中数据库的默认字符集</div><div class="line">character_set_system：系统元数据(字段名等)字符集</div></pre></td></tr></table></figure>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -121,7 +108,7 @@ Chrome 插件下载插件并安装（提取码：358b）
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/ssh/">ssh</a>
+  <span></span> <a href="/tags/mysql/">mysql</a><a href="/tags/编码/">编码</a>
   </div>
 
 </div>
@@ -165,19 +152,11 @@ Chrome 插件下载插件并安装（提取码：358b）
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/07/07/maven多模块/" title="maven多模块">
-  <strong>上一篇：</strong><br/>
-  <span>
-  maven多模块</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/07/04/Mavn打包记录/"  title="Mavn打包记录">
+<a href="/2016/08/06/vim-常用命令/"  title="vim 常用命令">
  <strong>下一篇：</strong><br/> 
- <span>Mavn打包记录
+ <span>vim 常用命令
 </span>
 </a>
 </div>
@@ -192,7 +171,7 @@ Chrome 插件下载插件并安装（提取码：358b）
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Chrome-插件"><span class="toc-number">1.</span> <span class="toc-text">Chrome 插件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装shadowsocks"><span class="toc-number">2.</span> <span class="toc-text">安装shadowsocks</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#加载配置"><span class="toc-number">3.</span> <span class="toc-text">加载配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#插件配置"><span class="toc-number">4.</span> <span class="toc-text">插件配置</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#错误详情"><span class="toc-number">1.</span> <span class="toc-text">错误详情</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解决方案"><span class="toc-number">2.</span> <span class="toc-text">解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#重建数据库"><span class="toc-number">2.1.</span> <span class="toc-text">重建数据库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#建表时指定编码和检验规则，例如"><span class="toc-number">2.2.</span> <span class="toc-text">建表时指定编码和检验规则，例如</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#其他资料"><span class="toc-number">2.3.</span> <span class="toc-text">其他资料</span></a></li></ol></li></ol>
  
   </div>
 
