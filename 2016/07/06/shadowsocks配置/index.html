@@ -25,7 +25,7 @@
 以下介绍Ubuntu下使用教程，其他平台，参考影梭官方和shadowsocks
 购买服务   点此购买
 安装 shadowsocks-gui123sudo add-apt-repository ppa:hzwhuang/ss-qt5sudo apt-get updatesudo apt-get install shadowsocks-q">
-<meta property="og:updated_time" content="2016-12-21T00:56:35.716Z">
+<meta property="og:updated_time" content="2016-12-21T02:04:05.314Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="shadowsocks配置">
 <meta name="twitter:description" content="所有教程请点击影梭官方推荐shadowsocks购买链接
@@ -55,7 +55,7 @@
 				<h1 class="site-name"><a href="/" title="Teclan">Teclan</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -92,14 +92,14 @@
 		<a href="/about" title="Teclan" target="_blank" itemprop="author">Teclan</a>
 		
   <p class="article-time">
-    <time datetime="2016-07-06T09:03:40.000Z" itemprop="datePublished"> 發表於 2016-07-06</time>
+    <time datetime="2016-07-06T09:03:40.000Z" itemprop="datePublished"> 发表于 2016-07-06</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目錄</strong>
+			<strong class="toc-title">文章目录</strong>
 		
 			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#购买服务"><span class="toc-number">1.</span> <span class="toc-text">购买服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-shadowsocks-gui"><span class="toc-number">2.</span> <span class="toc-text">安装 shadowsocks-gui</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置-shadowsocks-gui"><span class="toc-number">3.</span> <span class="toc-text">配置 shadowsocks-gui</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chrome-配置"><span class="toc-number">4.</span> <span class="toc-text">Chrome 配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#FireFox-配置"><span class="toc-number">5.</span> <span class="toc-text">FireFox 配置</span></a></li></ol>
 		
@@ -119,8 +119,7 @@
 <p>需要 Pyhton 2.6+，</p>
 <p>1、Install Shadowsocks.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ pip install shadowsocks</div></pre></td></tr></table></figure></p>
 <p>2、创建配置文件 config.json ，格式如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;server&quot;:&quot;my_server_ip&quot;,</div><div class="line">    &quot;server_port&quot;:8388,</div><div class="line">    &quot;local_port&quot;:1080,</div><div class="line">    &quot;password&quot;:&quot;barfoo!&quot;,</div><div class="line">    &quot;timeout&quot;:600,</div><div class="line">    &quot;method&quot;:&quot;table&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>在 config.json 所在目录执行以下命令启动 shadowsocks<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssserver</div></pre></td></tr></table></figure></p>
-<p>如何不想终端有信息输出，执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nohup ssserver &gt; log &amp;</div></pre></td></tr></table></figure></p>
+<p>在 config.json 所在目录执行以下命令启动 shadowsocks<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sslocal -c config.json</div></pre></td></tr></table></figure></p>
 <h3 id="Chrome-配置"><a href="#Chrome-配置" class="headerlink" title="Chrome 配置"></a>Chrome 配置</h3><p><a href="https://yunpan.cn/cBFZxVTrIpBEe" target="_blank" rel="external">下载插件</a>并安装<br>（提取码：358b）</p>
 <p>1、下载完成后在 设置 &gt;&gt; 扩展，直接把该 .crx 文件拖入窗口然后安装即可</p>
 <pre><code>然后打开 Proxy SwitchySharp 的设置，新建一个情景，命名为 iyingsuo （任意取名），
@@ -218,17 +217,17 @@ SOCKS5协议，后面的server和port填写 shadowsocks-gui 中的配置，一�
 	
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目錄</strong>
+  <strong class="toc-title">文章目录</strong>
  
  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#购买服务"><span class="toc-number">1.</span> <span class="toc-text">购买服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-shadowsocks-gui"><span class="toc-number">2.</span> <span class="toc-text">安装 shadowsocks-gui</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置-shadowsocks-gui"><span class="toc-number">3.</span> <span class="toc-text">配置 shadowsocks-gui</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Chrome-配置"><span class="toc-number">4.</span> <span class="toc-text">Chrome 配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#FireFox-配置"><span class="toc-number">5.</span> <span class="toc-text">FireFox 配置</span></a></li></ol>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
@@ -245,7 +244,7 @@ SOCKS5协议，后面的server和port填写 shadowsocks-gui 中的配置，一�
 
   
 <div class="tagslist">
-	<p class="asidetitle">標簽</p>
+	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
 			
@@ -508,7 +507,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="返回頂部"><img src="/img/scrollup.png"/></a>
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
