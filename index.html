@@ -68,6 +68,52 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2017/08/18/oracle重做日志分析/" title="oracle重做日志分析" itemprop="url">
+  
+    <h1 itemprop="name">oracle重做日志分析</h1>
+    
+     
+           <p itemprop="description" >日志文件的块大小查询日志文件的块大小可以通过如下方法来查询：1select distinct block_size from v$archived_log;
+清理脏块将所有的脏块给清到磁盘上1alter system flush buffer_cache
+查询日志分组信息1sel</p>
+        
+    
+    <time datetime="2017-08-18T14:00:04.000Z" itemprop="datePublished">2017-08-18</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2017/08/18/DB2常见错误与解决方案/" title="DB2常见错误与解决方案" itemprop="url">
+  
+    <h1 itemprop="name">DB2常见错误与解决方案</h1>
+    
+     
+           <p itemprop="description" >windows db2 命令行工具使用
+在控制台中输入 db2cmd 即可启动 db2 命令行工具。
+
+连接数据库1db2 connect to database_name user user_name using your_password
+执行脚本1db2 -td@ -vf </p>
+        
+    
+    <time datetime="2017-08-18T13:50:51.000Z" itemprop="datePublished">2017-08-18</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2017/06/20/oracle-数据库常见异常与配置/" title="oracle 数据库常见异常与配置" itemprop="url">
   
     <h1 itemprop="name">oracle 数据库常见异常与配置</h1>
@@ -238,53 +284,9 @@ JavaWeb 后台（JAVA程序）部署路由配置 必须实现 spark.servlet.Spar
 
 
 
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2016/08/31/数据库安装记录/" title="数据库安装记录" itemprop="url">
-  
-    <h1 itemprop="name">数据库安装记录</h1>
-    
-     
-           <p itemprop="description" >仅记录windows系统相关
-
-获取金仓数据库 根据系统环境选择对应版本下载
-安装(win32为例)下载得到的是一个压缩文件，解压后可的目录结构如下：12345678910kdb-xxx   |   |—— license_see_xxx_官网试用WIN_X86.bat   //</p>
-        
-    
-    <time datetime="2016-08-31T07:40:07.000Z" itemprop="datePublished">2016-08-31</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2016/08/29/mysql-中文乱码问题/" title="mysql 中文乱码问题" itemprop="url">
-  
-    <h1 itemprop="name">mysql 中文乱码问题</h1>
-    
-     
-           <p itemprop="description" >JDBC操作数据库中文乱码这种情况在跨平台数据操作出现的比较，一般常用的驱动和URL如下：12DRIVER：com.mysql.jdbc.DriverURL ： jdbc:mysql://%s:%d/%s
-如果出现乱码，请在URL中指定连接的操作编码，如下:12DRIVER：co</p>
-        
-    
-    <time datetime="2016-08-29T08:36:46.000Z" itemprop="datePublished">2016-08-29</time>
-  </a>
-</section>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix unexpand">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
   </nav>
 
 </div>
@@ -312,7 +314,11 @@ JavaWeb 后台（JAVA程序）部署路由配置 必须实现 spark.servlet.Spar
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/Github-pages/" title="Github-pages">Github-pages<sup>2</sup></a></li>
+				<li><a href="/tags/oracle/" title="oracle">oracle<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/编码/" title="编码">编码<sup>2</sup></a></li>
 			
 		
 			
@@ -328,7 +334,11 @@ JavaWeb 后台（JAVA程序）部署路由配置 必须实现 spark.servlet.Spar
 			
 		
 			
-				<li><a href="/tags/oracle/" title="oracle">oracle<sup>2</sup></a></li>
+				<li><a href="/tags/Github-pages/" title="Github-pages">Github-pages<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/乱码/" title="乱码">乱码<sup>2</sup></a></li>
 			
 		
 			
@@ -340,27 +350,23 @@ JavaWeb 后台（JAVA程序）部署路由配置 必须实现 spark.servlet.Spar
 			
 		
 			
+				<li><a href="/tags/DB2/" title="DB2">DB2<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/ssh/" title="ssh">ssh<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Maven/" title="Maven">Maven<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/打包/" title="打包">打包<sup>1</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/maven/" title="maven">maven<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/jetty/" title="jetty">jetty<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/sparkjava/" title="sparkjava">sparkjava<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/eclipse/" title="eclipse">eclipse<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/AngularJS/" title="AngularJS">AngularJS<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/ruby/" title="ruby">ruby<sup>1</sup></a></li>
 			
 		
 			
@@ -372,23 +378,19 @@ JavaWeb 后台（JAVA程序）部署路由配置 必须实现 spark.servlet.Spar
 			
 		
 			
-				<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
-			
-		
-			
 				<li><a href="/tags/Jekyll/" title="Jekyll">Jekyll<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/编码/" title="编码">编码<sup>1</sup></a></li>
+				<li><a href="/tags/tomcat/" title="tomcat">tomcat<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Maven/" title="Maven">Maven<sup>1</sup></a></li>
+				<li><a href="/tags/jetty/" title="jetty">jetty<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/打包/" title="打包">打包<sup>1</sup></a></li>
+				<li><a href="/tags/sparkjava/" title="sparkjava">sparkjava<sup>1</sup></a></li>
 			
 		
 		</ul>
